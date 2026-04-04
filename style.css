@@ -1,0 +1,28 @@
+body { font-family: Arial;
+background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+ }
+
+.main-image {
+     width: 300px;
+     height: 200px;
+}
+
+.season { margin-bottom: 20px; }
+
+h1 {
+    color: rgb(59, 22, 206);
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(59, 22, 206);
+    color: white;
+}
