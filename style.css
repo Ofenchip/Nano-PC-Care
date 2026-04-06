@@ -21,6 +21,20 @@ header {
     margin-bottom: 30px;
 }
 
+.sketchfab-embed-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+iframe {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+}
+
 main {
     max-width: 600px;  /* card container width */
     margin: 0 auto;     /* center horizontally */
