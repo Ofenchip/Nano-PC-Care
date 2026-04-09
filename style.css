@@ -54,7 +54,7 @@ background-color: #f5f5f5;   /* light background */
 }
 
 h1 {
-    color: rgb(59, 22, 206);
+    color: rgb(13, 7, 34);
     font-family: Arial, sans-serif;
 }
 
@@ -67,4 +67,16 @@ button {
 button:hover {
     background-color: rgb(59, 22, 206);
     color: white;
+}
+
+.performance {background-color: #abbf88;   /* light background */
+    padding: 15px;               /* space inside the box */
+    margin-bottom: 20px;         /* space between cards */
+    border-radius: 10px;         /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+.performance:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
 }
