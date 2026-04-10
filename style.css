@@ -21,11 +21,25 @@ header {
     margin-bottom: 30px;
 }
 
-.sketchfab-embed-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.model {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.model-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.model-wrapper iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
 }
 
 iframe {
@@ -69,14 +83,9 @@ button:hover {
     color: white;
 }
 
-.performance {background-color: #abbf88;   /* light background */
-    padding: 15px;               /* space inside the box */
-    margin-bottom: 20px;         /* space between cards */
-    border-radius: 10px;         /* rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
-}
-
-.performance:hover {
-    transform: scale(1.02);
-    transition: 0.2s;
+.performance {background-color: #abbf88;   
+    padding: 15px;               
+    margin-bottom: 20px;         
+    border-radius: 10px;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
