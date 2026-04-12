@@ -1,20 +1,32 @@
-body { font-family: Arial;
+
+body { font-family: Arial, sans-serif;
 background-color: #ded56d;
     margin: 0;
     padding: 0;
- }
+}
 
 .main-image {
-    width: 200px;      
-    height: auto;      
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px;
 }
 
 nav {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -24,6 +36,11 @@ header {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+main {
+    width: 100%;
 }
 
 .model {
@@ -42,40 +59,29 @@ header {
     border-radius: 12px;
 }
 
-iframe {
-    border-radius: 12px;
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-}
-
-main {
-    max-width: 600px;  /* card container width */
-    margin: 0 auto;     /* center horizontally */
-}
-
-.season { margin-bottom: 20px; 
-background-color: #f5f5f5;   /* light background */
-    padding: 15px;               /* space inside the box */
-    margin-bottom: 20px;         /* space between cards */
-    border-radius: 10px;         /* rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+.season {
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
 .season:hover {
     transform: scale(1.02);
-    transition: 0.2s;
 }
 
 h1 {
     color: rgb(13, 7, 34);
-    font-family: Arial, sans-serif;
 }
 
 button {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 button:hover {
