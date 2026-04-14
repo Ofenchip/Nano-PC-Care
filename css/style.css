@@ -93,3 +93,21 @@ h1 {
 .performance {
     background-color: var(--section-bg);
 }
+
+#pagenav a {
+    color: tomato;
+    text-decoration: none;
+}
+
+#pagenav a:hover {
+    color: #3b16ce;
+    text-decoration: underline;
+}
+
+p a {
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
