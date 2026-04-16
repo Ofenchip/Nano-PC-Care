@@ -40,6 +40,19 @@ nav a:hover {
     color: white;
 }
 
+#pagenav a {
+    color: tomato;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+#pagenav a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
 header {
     margin-bottom: 30px;
 }
@@ -70,19 +83,52 @@ main {
     border-radius: 12px;
 }
 
-.card {
+.card,
+.performance-card,
+#cleaning-guide,
+#cleaning {
+    background-color: var(--card-bg);
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.season {
-    background-color: var(--card-bg);
+.card {
+    transition: transform 0.2s ease;
 }
 
-.season:hover {
+.card:hover {
     transform: scale(1.02);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.season-spring {
+    background-color: #ebfeeb;
+    font-size: 20px
+}
+
+.season-summer {
+    background-color: #fff4d6;
+    font-size: 20px
+}
+
+.season-autumn {
+    background-color: #f8ede3;
+    font-size: 20px
+}
+
+.season-winter {
+    background-color: #e8f1fb;
+    font-size: 20px
+}
+
+.performance-card {
+    background-color: var(--section-bg);
 }
 
 h1 {
@@ -94,15 +140,6 @@ h1 {
     background-color: var(--section-bg);
 }
 
-#pagenav a {
-    color: tomato;
-    text-decoration: none;
-}
-
-#pagenav a:hover {
-    color: #3b16ce;
-    text-decoration: underline;
-}
 
 p a {
     text-decoration: none;
