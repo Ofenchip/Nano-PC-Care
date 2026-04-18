@@ -40,7 +40,7 @@ nav a:hover {
     color: white;
 }
 
-#pagenav a {
+#page-link a {
     color: tomato;
     text-decoration: none;
     display: inline-block;
@@ -48,7 +48,7 @@ nav a:hover {
     margin-bottom: 8px;
 }
 
-#pagenav a:hover {
+#page-link a:hover {
     color: var(--accent);
     text-decoration: underline;
 }
