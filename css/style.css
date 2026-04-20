@@ -5,16 +5,25 @@
     --section-bg: #abbf88;
 }
 
-body { font-family: Montserrat, Roboto+Mono, Arial, sans-serif; 
-    font-weight: 700;
+body { font-family: "Montserrat", "Roboto Mono", Arial, sans-serif; 
+    font-weight: 400;
 background-color: var(--bg-main);
     margin: 0;
     padding: 0;
 }
 
+.container {
+    font-family: "Roboto Mono";
+}
+
+.hero {
+}
+.hero-title {
+    font-family: "Montserrat";
+}
+
 .main-image {
     width: 100%;
-    max-width: 400px;
     height: auto;
     display: block;
     margin: 0 auto 20px;

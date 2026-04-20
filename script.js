@@ -1,4 +1,4 @@
-document.getElementById("testBtn").onclick = () => {
+document.getElementById("hero-button").onclick = () => {
     alert("Working!");
 };
 
