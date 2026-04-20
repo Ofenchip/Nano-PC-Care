@@ -20,6 +20,17 @@ background-color: var(--bg-main);
 }
 .hero-title {
     font-family: "Montserrat";
+    font-size: 30px;
+    line-height: 2;
+    letter-spacing: -0,04em;
+    color:rgb(8, 8, 8);
+}
+
+.hero-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 17px;
+    color: #0d0722;
 }
 
 .main-image {
