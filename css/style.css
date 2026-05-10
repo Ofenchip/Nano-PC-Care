@@ -1,3 +1,8 @@
+
+/* =========================
+VARIABLES
+========================= */
+
 :root {
     --bg-main: #fafafa;
     --card-bg: #f5f5f5;
@@ -5,11 +10,16 @@
     --section-bg: #abbf88;
 }
 
+/* =========================
+GLOBAL STYLES
+========================= */
+
 body { font-family: "Montserrat", "Roboto Mono", Arial, sans-serif; 
     font-weight: 400;
 background-color: var(--bg-main);
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .title {
@@ -33,30 +43,60 @@ background-color: var(--bg-main);
     overflow: hidden;
 }
 
+/* =========================
+LAYOUT
+========================= */
+
 .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
     font-family: "Roboto Mono";
 }
 
+/* =========================
+HERO SECTION
+========================= */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
 .hero-card {
     margin: 0 auto 100px;
 }
-
 .hero-title {
-    font-size: 30px;
-    line-height: 2;
-    letter-spacing: -0,04em;
-    color:rgb(8, 8, 8);
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 20px;
 }
-
+.hero-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
 .hero-button {
     font-family: inherit;
     font-weight: 700;
     font-size: 17px;
-    color: #0d0722;
+    color:brown;
+    border-radius: 999px;
+}
+
+.hero-button:hover {
+    background-color:lavender;
+    color: rgb(30, 210, 195);
 }
 
 .model-text {
-    color: plum;
+    color: salmon;
 }
 
 .model-text a {
@@ -75,6 +115,10 @@ background-color: var(--bg-main);
     display: block;
     margin: 0 auto 20px;
 }
+
+/* =========================
+HEADER / NAVIGATION
+========================= */
 
 nav {
     display: flex;
@@ -97,6 +141,7 @@ nav a:hover {
     color: white;
 }
 
+
 #figcaption-text {
     text-align: center;
 }
@@ -111,57 +156,61 @@ nav a:hover {
 }
 
 #page-link a:hover {
-    color: var(--accent);
-    text-decoration: underline;
+    color:rgb(30, 210, 195);
+    text-decoration:overline;
 }
 
 header {
     margin-bottom: 30px;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 main {
     width: 100%;
 }
+
+/* =========================
+MODEL SECTION
+========================= */
 
 .model {
     text-align: center;
     margin: 40px 0;
 }
-
 .model-wrapper {
     max-width: 800px;
     margin: 0 auto;
 }
-
 .model-wrapper iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 12px;
 }
 
+/* =========================
+GENERAL CARDS
+========================= */
+
 .card,
 .performance-card,
 #cleaning-guide,
 #cleaning {
-    background-color: var(--card-bg);
+    background-color:darkgray;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .card {
-    transition: transform 0.2s ease;
+        transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
+
 .card:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
 .card h3 {
@@ -169,13 +218,16 @@ main {
     margin-top: 0;
 }
 
-#temperature {
-    display: flex;
+/* =========================
+SEASON CARDS
+========================= */
+
+.seasons-all {
+display: flex;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 50px;
 }
-
 .card {
     width: 100%;
     box-sizing: border-box;
@@ -202,34 +254,13 @@ main {
 }
 
 
+/* =========================
+PERFORMANCE
+========================= */
 .performance-card {
     background-color: var(--section-bg);
 }
 
 .performance-issues {
 font-size: 18px;
-}
-
-h1 {
-    color: rgb(13, 7, 34);
-}
-
-
-.tools-list {
-}
-.tool {
-}
-
-
-.performance-card {
-}
-.issue {
-}
-
-p a {
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
 }
