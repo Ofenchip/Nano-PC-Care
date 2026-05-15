@@ -47,6 +47,12 @@ background-color: var(--bg-main);
 LAYOUT
 ========================= */
 
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -191,6 +197,34 @@ MODEL SECTION
 }
 
 /* =========================
+MAINTANACE
+========================= */
+.maintenance {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border:solid;
+    margin-bottom: 100px;
+}
+
+.maintenance-heading {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.maintenance-text{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.maintenance-text-care {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* =========================
 GENERAL CARDS
 ========================= */
 
@@ -225,6 +259,10 @@ GENERAL CARDS
 /* =========================
 SEASON CARDS
 ========================= */
+
+.cleaning-calendar-heading {
+margin-bottom: 30px;
+}
 
 .seasons-all {
 display: flex;
