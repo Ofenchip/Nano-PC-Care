@@ -24,12 +24,11 @@ DARK MODE
 GLOBAL STYLES 
 ========================= */
 
-body { font-family: "Montserrat", "Roboto Mono", Arial, sans-serif; 
+body { 
+    font-family: "Montserrat", "Roboto Mono", Arial, sans-serif; 
     font-weight: 400;
-background-color: var(--bg-main);
+    background-color: var(--bg-main);
     margin: 0;
-    padding: 0;
-    display: flex;
 }
 
 .title {
@@ -81,12 +80,12 @@ padding: 0 20px;
     list-style: none;
     box-sizing: border-box;
 }
-.container {
-    width: 1166px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: "Roboto Mono";
+
+.container{
+    max-width:1166px;
+    width:100%;
+    margin:auto;
+    padding-inline:20px;
 }
 
 /* =========================
@@ -158,8 +157,27 @@ padding: 100px 40px 40px 40px;
 }
 
 /* =========================
-HEADER / NAVIGATION
+HEADER / NAVIGATION / DARKMODE
 ========================= */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.dark-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    z-index: 1000;
+}
 
 nav {
     display: flex;
@@ -182,24 +200,37 @@ nav a:hover {
     color: white;
 }
 
+#page-link {
+    margin-top: 40px;
+}
+
+.page-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.page-link-heading {
+    margin: 20px;
+    color: tomato;
+}
+
+.page-links a {
+    color: tomato;
+    text-decoration: none;
+}
+
+.page-links a:hover {
+    color: rgb(30, 210, 195);
+    text-decoration: underline;
+}
 
 #figcaption-text {
     text-align: center;
 }
 
-#page-link a {
-    color: tomato;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    margin-right: 12px;
-    margin-bottom: 8px;
-}
-
-#page-link a:hover {
-    color:rgb(30, 210, 195);
-    text-decoration:overline;
-}
 
 header {
     padding-top: 30px;
@@ -310,12 +341,22 @@ GENERAL CARDS
 SEASON CARDS
 ========================= */
 
+.seasons-all{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    flex:1 1 45%;
+}
+
 .cleaning-calendar-heading {
 margin-bottom: 30px;
 margin-top: 100px;
 }
 
-.seasons-all {
+/*.seasons-all {
 display: flex;
     flex-direction: column;
     gap: 30px;
@@ -324,7 +365,7 @@ display: flex;
 .card {
     width: 100%;
     box-sizing: border-box;
-}
+}*/
 
 .season-spring {
     background-color: #ebfeeb;
