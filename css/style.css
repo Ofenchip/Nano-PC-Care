@@ -38,6 +38,10 @@ body {
     margin-bottom: 20px;
 }
 
+img {
+    display: block;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
